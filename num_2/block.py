@@ -10,21 +10,21 @@
 사용자에게 구입 금액을 물어보고 최종적으로 할인 금액과 지불 금액을 출력하는 프로그램을 작성해보자.
 """
 total = int(input("구입 금액을 입력하시오:"))
-if(total>=100000):
+if (total >= 100000):
     total = total*0.95
-print("지불 금액은 %d입니다."%total)
+print("지불 금액은 %d입니다." % total)
 
 """
 위의 프로그램에서 사용자의 구입액이 10만원 이하인 경우에는, 사용자에게 얼마만큼 더 구입하면 
 5% 할인을 받을 수 있다고 알려주는 코드를 추가해보자.
 """
 total = int(input("구입 금액을 입력하시오:"))
-if(total>=100000):
+if (total >= 100000):
     total = total*0.95
 else:
     change = 100000 - total
-    print(change,"원 더 지불하시면 5%의 할인을 받으실 수 있습니다.")
-print("지불 금액은 %d입니다."%total)
+    print(change, "원 더 지불하시면 5%의 할인을 받으실 수 있습니다.")
+print("지불 금액은 %d입니다." % total)
 
 """
 문자열의 중간문자
@@ -36,13 +36,13 @@ print("지불 금액은 %d입니다."%total)
 예를 들어서 "string" 문자열에서는 "ri"를 반환한다.
 """
 text = input("문자열을 입력하시오:")
-if(len(text)%2==0):
+if (len(text) % 2 == 0):
     ch1 = text[len(text)//2-1]
     ch2 = text[len(text)//2]
-    print("중앙글자는 ",ch1,ch2)
+    print("중앙글자는 ", ch1, ch2)
 else:
     ch1 = text[len(text)//2]
-    print("중앙글자는 ",ch1)
+    print("중앙글자는 ", ch1)
 
 """
 임금 계산
@@ -52,7 +52,7 @@ else:
 """
 time = float(input("근무시간을 입력하시오:"))
 money = float(input("시간당 임금을 입력하시오:"))
-if(time<=40):
+if (time <= 40):
     totalWages = money*time
 else:
     overtime = time - 40
